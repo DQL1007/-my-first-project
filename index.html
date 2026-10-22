@@ -32,9 +32,20 @@
     <span class="skill">CSS</span>
     <span class="skill">JavaScript</span>
 
-<button onclick="alert('Welcome to my website!')">
+
+<button onclick="showWelcome()">
     Say Hello
 </button>
+
+<p id="welcome-message"></p>
+
+<script>
+    function showWelcome() {
+        document.getElementById("welcome-message").textContent =
+            "Welcome to my website! Nice to meet you!";
+    }
+</script>
+
     <h2>My Goal</h2>
 
     <p>
